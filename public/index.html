@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/skeleton.css" rel="stylesheet">
+        <link href="css/index.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <header id="header">
+            <h2><u>Judge a Book by its Cover</u></h2>
+        </header>
+        <div id="highDiv">
+            <h5>Highscore: <span id="highscore"></span></h5>
+        </div>
+        <div id="output">
+            <h3 id="message"></h3>        
+            <h5 id="scoreDis">Score: <span id="score">0</span></h5>
+            <button id="startButton" onclick="getClicked()">Start</button>
+            <br>
+            <div id="bookImage">
+                <img id="bookCover">
+            </div>
+            <br>
+            <div id="options"></div>
+        </div>
+        <script src="client.js"></script>
+    </body>
+</html>

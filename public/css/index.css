@@ -1,0 +1,76 @@
+/*Custom Properties*/
+:root {
+    --clr-light: #fbf5f3;
+    --clr-dark: #0F0E0E;
+    --clr-accent1:#e0574c;
+    --clr-accent2: #a7ce86;
+    --clr-accent3: #26b295;
+    --clr-accent4: #06303b; 
+
+    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),0.25em 0.25em 0.75em rgba(0,0,0,.55);
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: auto;
+}
+
+body {
+    background: var(--clr-accent1);
+}
+
+header{
+    text-align: center;
+    border-radius: 0.5em;
+    background-color: var(--clr-accent2);
+    margin-bottom: 0;
+    width:50%;
+    font-family: 'Petit Formal Script', cursive;
+}
+
+#bookCover {
+    box-shadow: var(--bs);
+}
+
+#output{
+    width:75%;
+    text-align: center;
+    background: var(--clr-light);
+    color:var(--clr-dark);
+    border-radius: 1em;
+    border: dotted;
+}
+
+#scoreDis{
+    background: var(--clr-accent4);
+    color:var(--clr-light);
+    width:40%;
+    border-radius:0.5em;
+    border: dotted;
+}
+
+#startButton, .optionButton{
+    background: var(--clr-accent3);
+    color:var(--clr-dark);
+    margin:5px;
+}
+
+#startButton:hover{
+    box-shadow: var(--bs);
+}
+
+
+#highDiv{
+    position: absolute;
+    border-radius: 0.5em;
+    top:50px;
+    left: 5px;
+    background-color: var(--clr-accent4);
+    color:var(--clr-light);
+    box-shadow: var(--bs);
+    padding:3px;
+}
